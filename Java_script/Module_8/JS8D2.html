@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<script>
+ let min =+prompt("Введіть нижню межу діапазону", 0);
+ let max =+prompt("Введіть верхню межу діапазону", 100);
+ let sum=0;
+ let count;
+    for (count = min; count <= max; count++){
+        sum=sum+count;
+    }
+    document.write("Сума чисел від " + min + " до " + max + " дорівнює: " + sum);
+
+
+
+</script>
+</body>
+</html>

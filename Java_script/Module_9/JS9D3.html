@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<script>
+function createSteps(numSteps, symbol) {
+    for (let i = 1; i <= numSteps; i++) {
+        document.write(symbol.repeat(i) + "<br>");
+    }
+}
+
+let numRows = parseInt(prompt("Введіть кількість рядків:"));
+let symbol = prompt("Введіть символ:");
+createSteps(numRows, symbol);
+
+
+</script>
+</body>
+</html>

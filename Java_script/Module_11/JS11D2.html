@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+            font-size: 30px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+    let randomNum1 = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+    let randomNum2 = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+
+    let randomNum3 = Math.floor(Math.random() * (randomNum2 - randomNum1 + 1) + randomNum1);
+    let randomNum4 = Math.floor(Math.random() * (randomNum2 - randomNum1 + 1) + randomNum1);
+    let randomNum5 = Math.floor(Math.random() * (randomNum2 - randomNum1 + 1) + randomNum1);
+
+    document.write('<br>Перше випадкове число: ' + randomNum1+ '</br>');
+    document.write('<br>Друге випадкове число: ' +randomNum2 + '</br>');
+    document.write('<br>Третє випадкове число: ' +randomNum3 + '</br>');
+    document.write('<br>Четверте випадкове число: ' +randomNum4 + '</br>');
+    document.write('<br>П`яте випадкове число: ' +randomNum5 + '</br>');
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(228, 245, 248);
+            color: black;
+            font-size: 30px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+let age = parseFloat(prompt('Скільки вам років?', "" ));
+if (age <18 || age >100) {
+    if(age % 10 === 1 && age % 100 !== 11 ) {
+        document.write('Вам ' + age + ' рік, ви не можете зайти');
+    }
+    else if(age % 10 >= 2 && age % 10 <= 4 && age % 100 !== 12 &&  age % 100 !== 13 && age % 100 !== 14 ) {
+        document.write('Вам ' + age + ' роки, ви не можете зайти');
+    }
+    else {
+        document.write('Вам ' + age + ' років, ви не можете зайти');
+    }
+}
+else {
+    if(age % 10 === 1 && age % 100 !== 11 ) {
+        document.write('Вам ' + age + ' рік, доступ дозволено');
+    } else if(age % 10 >= 2 && age % 10 <= 4 && age % 100 !== 12 &&  age % 100 !== 13 && age % 100 !== 14) {
+        document.write('Вам ' + age + ' роки, доступ дозволено');
+    } else {
+        document.write('Вам ' + age + ' років, доступ дозволено');
+    }
+
+}
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>

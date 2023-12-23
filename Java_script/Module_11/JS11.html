@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>/*
+let x = prompt('Введіть будь-яке число ', '-3.14');
+while(isNaN(x)){
+    alert ("Це NaN - не число");
+}
+alert("Ви ввели число " + x)
+
+let x = prompt('Введіть значення x','');
+let n = prompt('Введіть значення n','');
+function  checkSum(sum){
+    if( x > 0 || x <1 || n > 0 || n<1)
+    return true;
+}else{
+    alert("Ви ввели число ")
+}
+*/
+
+let min = +prompt("Мінімальне значення?", 0);
+let max = +prompt("Максимальне значення?", 100);
+
+let targetNumber = Math.round(min + Math.random() * (max - min));
+
+let num = 0;
+let attempts = 0;
+
+do {
+    num = +prompt("Вгадайте число від " + min + " до " + max, "");
+    attempts++;
+
+    if (num === null) {
+        alert("До побачення!");
+    } else if (num > targetNumber) {
+        alert("Це число більше загаданого");
+    } else if (num < targetNumber) {
+        alert("Це число менше загаданого");
+    }
+
+} while (num !== targetNumber && num !== null);
+
+if (num === targetNumber) {
+    alert("Правильно. Кількість спроб: " + attempts);
+}
+
+
+</script>
+</body>
+</html>

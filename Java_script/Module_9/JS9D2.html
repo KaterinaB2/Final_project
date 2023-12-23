@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+            font-size: 30px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+let maxNumber = parseInt(prompt("Введіть максимальне число для таблиці множення: "));
+
+if (maxNumber > 10) {
+    alert("Будь ласка, введіть число до 10.");
+} else {
+    document.write("<pre>");
+
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= maxNumber; j++) {
+            document.write(`${i}×${j}=${i * j}\t`);
+        }
+        document.write("<br>");
+    }
+
+    document.write("</pre>");
+}
+
+</script>
+</body>
+</html>

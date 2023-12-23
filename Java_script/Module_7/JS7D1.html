@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+            font-size: 30px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+let plant = prompt('Введіть назву рослини: ', '');
+plant = plant.toLowerCase();
+
+switch (plant) {
+    case 'огірок':
+    case 'помідор': 
+    case 'перець':
+        document.write('Це овочі');
+        break;
+    case 'яблуко':
+    case 'слива': 
+    case 'груша':
+        document.write('Це фрукт');
+        break;
+    case 'полуниця': 
+    case 'лохина': 
+    case 'виноград':
+        document.write('Це ягода');
+        break;
+    default:
+        document.write('У нашому довіднику немае такого, але ми незабаром додамо');
+}
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function знайдиПозиціїПідрядка(основнийРядок, підрядок) {
+    let початковаПозиція = -1;
+
+    do {
+        початковаПозиція = основнийРядок.indexOf(підрядок, початковаПозиція + 1);
+
+        if (початковаПозиція !== -1) {
+            console.log(`Позиція: ${початковаПозиція}`);
+        }
+    } while (початковаПозиція !== -1);
+}
+
+const основнийРядок = "бредуть бобри в сирі бори. бобри хоробрі, а для бобрят добрі";
+const підрядок = "ри";
+
+знайдиПозиціїПідрядка(основнийРядок, підрядок);
+
+</script>
+</body>
+</html>
